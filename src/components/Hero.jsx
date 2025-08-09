@@ -56,7 +56,7 @@ const Hero = () => {
       //video animation
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: '.video',
+          trigger: 'video',
           start: startValue,
           end: endValue,
           scrub: true,
@@ -109,7 +109,7 @@ const Hero = () => {
     <div className="video absolute inset-0">
       <video
       ref={videoRef}
-       src="/video/input.mp4"
+       src="/videos/output.mp4"
        muted
        playsInline
        preload="auto"
